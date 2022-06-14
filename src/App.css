@@ -1,0 +1,123 @@
+
+.header{
+  width: 100%;
+  /* border: red solid; */
+  margin: 0 0 0 0;
+  background-color: bisque;
+  color: white;
+  background-image: linear-gradient(to right, rgb(213, 137, 5) , rgb(252, 252, 185));
+  padding: 8px 0 8px 10px;
+}
+
+body{
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  background-image: url("https://i.imgur.com/kkMkMNq.jpg");
+  background: size 100vw;;
+  background-position:center;
+  background-repeat: no-repeat;
+}
+
+
+.breweriesContainer{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  /* border: 2px rgb(0, 0, 0) solid; */
+  background-color:  rgb(255, 253, 248);
+  min-width: 220px;
+  padding: 8px 8px 8px 8px;
+  border-radius: 10px;
+  height: fit-content;
+}
+
+.singleBrewerie{
+  border: none;
+  color: rgb(0, 0, 0);
+  font-weight: bolder;
+  font-size: 20px;
+  background-color: rgba(240, 248, 255, 0);
+  padding: 8px 16px 8px 16px;
+  text-align: left;
+}
+.singleBrewerie:hover{
+  background-color: bisque;
+  color: black;
+  border-radius: 10px;
+  padding:  8px 16px 8px 16px;
+  transition: all .2s ease;
+  -webkit-transition: all .2s ease;
+}
+#listAndDetailsContainer{
+  /* border: red solid; */
+  display: flex;
+  justify-content: space-around;
+
+  margin: 30px 30px 0 30px;
+
+
+ 
+}
+
+.detailsContainer{
+  background-color: rgb(254, 250, 240);
+  /* border: rgb(116, 116, 116) solid; */
+  border-radius: 10px;
+  padding: 15px;
+  height: fit-content;
+  width: fit-content;
+  line-height: 2px;
+  /* box-shadow: 2px 2px 8px 1px #888888; */
+}
+
+
+#locationLineEl{
+  color: grey;
+  
+}
+
+#breweryNameEl{
+  margin: 0 0 0 0;
+  padding: 10px 0 8px 0;
+  flex-wrap: nowrap;
+  /* border: red solid; */
+  min-height: fit-content;
+  min-width: fit-content;
+  /* height: 40px; */
+
+}
+#breweryNameEl h1{
+  margin: 0 0 0 0;
+}
+
+#emptyDetailsContainer{
+  border: rgb(198, 198, 198) solid;
+  border-radius: 10px;
+  padding: 15px;
+  height: 60vh;
+  width: 30vw;
+  line-height: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:rgb(255, 255, 255);
+  background-color: rgba(23, 23, 23, 0.29);
+  border-style: dashed;
+  font-size: 25px;
+}
+
+#mapBorder{
+  border: 4px rgb(74, 74, 74) solid;
+  
+}
+
+#legendForBreweriesContainer{
+  color: rgb(255, 255, 255);
+  border: 0 none;
+  background-color: rgb(0, 0, 0);
+  padding: 2px 4px 2px 4px;
+  border-radius: 4px;;
+}
+
+fieldset {
+  border: 0;
+}
