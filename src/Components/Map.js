@@ -3,13 +3,13 @@ import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 import Geocode from "react-geocode";
 
 
-// 
+
 
 export default function Map(props) {
   let center
-  
   let latitude = props.coordinates.latitude
   let longitude = props.coordinates.longitude
+  
   useEffect(()=>{
     
   }, [latitude,longitude])

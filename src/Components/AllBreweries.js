@@ -43,7 +43,7 @@ let handleMappingBreweries = allBreweries.map((brewery,i)=>{
        return <button key={brewery.name} className="singleBrewerie"onClick={()=>showDetails(brewery)}>{brewery.name}</button>
     })
 
-// ///////////Setting up latitudes if they dont exist. /////////
+///////////Setting up latitudes if they dont exist. /////////
 
 
     let googleMap 
@@ -65,8 +65,6 @@ let handleMappingBreweries = allBreweries.map((brewery,i)=>{
     }
 
        
-//    create an array of keys from the select brewery object 
-// then whichever ones are undefined just show "url not currently available"
 
 
 // If option hasn't been selected, show the "select brewerie" element. 
@@ -91,9 +89,6 @@ let handleMappingBreweries = allBreweries.map((brewery,i)=>{
                         </div>
     }
 
-    
-
-
   return (
     <>
     <div id="listAndDetailsContainer">
@@ -109,4 +104,3 @@ let handleMappingBreweries = allBreweries.map((brewery,i)=>{
     </>
   )
 }
-// /
