@@ -90,7 +90,8 @@ let handleMappingBreweries = allBreweries.map((brewery,i)=>{
 
                         <Map coordinates={{
                             latitude:selectedBrewerie.latitude,
-                            longitude:selectedBrewerie.longitude
+                            longitude:selectedBrewerie.longitude, 
+                           
                         }}/>
                         </div>
     }

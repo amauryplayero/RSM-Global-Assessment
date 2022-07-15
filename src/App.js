@@ -1,6 +1,7 @@
 import './App.css';
 import AllBreweries from './Components/AllBreweries'
 import Header from './Components/Header'
+import AllBreweriesMobile from './Components/AllBreweriesMobile';
 import {useEffect, useState} from 'react'
 function App() {
   const [windowWidth, setWindowWidth] = useState(0)
@@ -19,7 +20,9 @@ function App() {
 
    let mobile
    if(windowWidth<=490){
-     mobile = <AllBreweriesMobile />
+     mobile = <AllBreweriesMobile width={windowWidth}/>
+   } else{
+     mobile = <AllBreweries width={windowWidth}/>
    }
 
 
@@ -27,7 +30,7 @@ console.log(windowWidth)
   return (
     <>
     <Header />
-    <AllBreweries width={windowWidth}/>
+    {mobile}
     </>
   );
 }

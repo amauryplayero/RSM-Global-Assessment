@@ -9,15 +9,26 @@ export default function Map(props) {
   let center
   let latitude = props.coordinates.latitude
   let longitude = props.coordinates.longitude
-  
+  let windowWidth = props.windowWidth
+  let containerStyle
+
   useEffect(()=>{
     
   }, [latitude,longitude])
 
-    const containerStyle = {
+  if(windowWidth=400){
+     containerStyle = {
+      width: '300px',
+      height: '200px'
+    };
+
+  } else{
+
+    containerStyle = {
       width: '400px',
       height: '400px'
     };
+  }
 
     if(latitude === undefined){
       return (<></>)
