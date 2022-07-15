@@ -37,7 +37,6 @@ export default function Map(props) {
           zoom={15}>
                  <Marker position={{lat:center.lat, lng:center.lng}} 
                          animation={1}/>
-                 
                  <></>
       </GoogleMap>
       </div>

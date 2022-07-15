@@ -6,18 +6,24 @@ import Geocode from "react-geocode";
 
 
 
-export default function AllBreweries() {
+export default function AllBreweries(props) {
 
 
 const [allBreweries, setAllBreweries] = useState([])
 const [selectedBrewerie, setSelectedBrewerie] = useState("")
 const [address, setAddress] = useState([])
 
+let windowWidth = props.width
+
+
+
+
 
 
 useEffect(() => {
-        getAllBreweries()
-    }, []);
+    getAllBreweries()
+}, []);
+
 
 const showDetails = (brewery)=>{
     
@@ -88,7 +94,7 @@ let handleMappingBreweries = allBreweries.map((brewery,i)=>{
                         }}/>
                         </div>
     }
-
+  
   return (
     <>
     <div id="listAndDetailsContainer">
@@ -103,4 +109,4 @@ let handleMappingBreweries = allBreweries.map((brewery,i)=>{
     </div>
     </>
   )
-}
+  }

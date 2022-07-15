@@ -50,8 +50,8 @@ body{
 #listAndDetailsContainer{
   /* border: red solid; */
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
-
   margin: 30px 30px 0 30px;
 
 
@@ -121,3 +121,5 @@ body{
 fieldset {
   border: 0;
 }
+
+
