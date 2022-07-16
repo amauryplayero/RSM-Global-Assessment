@@ -15,11 +15,11 @@ export default function Map(props) {
   useEffect(()=>{
     
   }, [latitude,longitude])
-
-  if(windowWidth=400){
+console.log(windowWidth)
+  if(windowWidth<=400){
      containerStyle = {
-      width: '300px',
-      height: '200px'
+      width: '100px',
+      height: '100px'
     };
 
   } else{
